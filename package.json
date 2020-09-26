@@ -1,8 +1,11 @@
 {
-  "name": "eslint-config-myrotvorets-ts",
+  "name": "@myrotvorets/eslint-config-myrotvorets-ts",
   "version": "1.0.0",
   "description": "ESLint configuration for TypeScript",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
