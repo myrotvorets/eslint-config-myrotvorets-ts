@@ -90,6 +90,7 @@ module.exports = {
         '@typescript-eslint/prefer-reduce-type-parameter': 'warn',
         '@typescript-eslint/prefer-regexp-exec': 'warn',
         '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
+        '@typescript-eslint/restrict-template-expressions': 'off',
 
         'import/order': [
             'error',
