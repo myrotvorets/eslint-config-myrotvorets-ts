@@ -63,7 +63,7 @@ module.exports = {
         'no-useless-constructor': 'warn',
         'no-useless-rename': 'warn',
         'no-useless-return': 'warn',
-        'no-void': 'error',
+        'no-void': 'warn',
         'prefer-promise-reject-errors': 'error',
         'prefer-template': 'warn',
         radix: 'error',
