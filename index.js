@@ -100,10 +100,10 @@ module.exports = {
             },
         ],
 
-        'cognitive-complexity': 'off',
-        'max-switch-cases': 'warn',
-        'no-duplicate-string': 'off',
-        'no-element-overwrite': 'warn',
-        'no-small-switch': 'warn',
+        'sonarjs/cognitive-complexity': 'off',
+        'sonarjs/max-switch-cases': 'warn',
+        'sonarjs/no-duplicate-string': 'off',
+        'sonarjs/no-element-overwrite': 'warn',
+        'sonarjs/no-small-switch': 'warn',
     },
 };
