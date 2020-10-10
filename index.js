@@ -8,6 +8,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
+        'plugin:sonarjs/recommended',
         'plugin:prettier/recommended',
     ],
     rules: {
@@ -98,5 +99,11 @@ module.exports = {
                 groups: [['builtin', 'external', 'internal']],
             },
         ],
+
+        'cognitive-complexity': 'off',
+        'max-switch-cases': 'warn',
+        'no-duplicate-string': 'off',
+        'no-element-overwrite': 'warn',
+        'no-small-switch': 'warn',
     },
 };
