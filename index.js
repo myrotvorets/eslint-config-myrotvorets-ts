@@ -92,6 +92,7 @@ module.exports = {
         '@typescript-eslint/prefer-regexp-exec': 'warn',
         '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
         '@typescript-eslint/restrict-template-expressions': 'off',
+        '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
 
         'import/order': [
             'error',
