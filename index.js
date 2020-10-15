@@ -84,6 +84,13 @@ module.exports = {
         '@typescript-eslint/ban-tslint-comment': 'warn',
         '@typescript-eslint/explicit-function-return-type': 'warn',
         '@typescript-eslint/explicit-member-accessibility': 'error',
+        '@typescript-eslint/no-this-alias': [
+            'error',
+            {
+                allowDestructuring: true,
+                allowedNames: ['self'],
+            },
+        ],
         '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
         '@typescript-eslint/no-unnecessary-type-arguments': 'warn',
