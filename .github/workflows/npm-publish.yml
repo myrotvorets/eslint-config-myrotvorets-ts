@@ -10,22 +10,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.2
+
+      - name: Set up Node.js and configure it for GitHub package registry
+        uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com
-      - run: npm ci --ignore-scripts
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm rebuild && npm run prepare --if-present
-      - run: npm publish
+          registry-url: https://npm.pkg.github.com/
+
+      - name: Run clean install
+        run: npm ci
+
+      - name: Publish to GitHub package registry
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: rm -f .npmrc
-      - uses: actions/setup-node@v2.1.2
+      - name: Remove .npmrc created by actions/setup-node
+        run: rm -f "$NPM_CONFIG_USERCONFIG"
+
+      - name: Set up Node.js and configure it for npmjs package registry
+        uses: actions/setup-node@v1
         with:
-          registry-url: https://registry.npmjs.org
-      - run: npm publish
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+
+      - name: Publish to npmjs package registry
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
