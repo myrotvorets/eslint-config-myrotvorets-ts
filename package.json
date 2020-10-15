@@ -39,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/myrotvorets/eslint-config-myrotvorets-ts/issues"
   },
-  "homepage": "https://github.com/myrotvorets/eslint-config-myrotvorets-ts#readme"
+  "homepage": "https://github.com/myrotvorets/eslint-config-myrotvorets-ts#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
