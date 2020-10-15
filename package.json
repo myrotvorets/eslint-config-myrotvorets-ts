@@ -35,7 +35,11 @@
     "type": "git",
     "url": "git+https://github.com/myrotvorets/eslint-config-myrotvorets-ts.git"
   },
-  "keywords": [],
+  "keywords": [
+    "eslint-config",
+    "eslint",
+    "typescript"
+  ],
   "bugs": {
     "url": "https://github.com/myrotvorets/eslint-config-myrotvorets-ts/issues"
   },
