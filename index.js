@@ -34,7 +34,7 @@ module.exports = {
         'no-floating-decimal': 'error',
         'no-global-assign': 'warn',
         'no-implied-eval': 'error',
-        'no-invalid-this': 'error',
+        'no-invalid-this': 'off',
         'no-irregular-whitespace': [
             'error',
             {
