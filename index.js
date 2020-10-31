@@ -9,6 +9,8 @@ module.exports = {
         'plugin:import/warnings',
         'plugin:import/typescript',
         'plugin:sonarjs/recommended',
+        'plugin:jest/recommended',
+        'plugin:jest/style',
         'plugin:prettier/recommended',
     ],
     rules: {
@@ -113,5 +115,7 @@ module.exports = {
         'sonarjs/no-duplicate-string': 'off',
         'sonarjs/no-element-overwrite': 'warn',
         'sonarjs/no-small-switch': 'warn',
+
+        'jest/expect-expect': 'off',
     },
 };
