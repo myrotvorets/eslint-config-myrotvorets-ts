@@ -118,4 +118,9 @@ module.exports = {
 
         'jest/expect-expect': 'off',
     },
+    settings: {
+        jest: {
+            version: 26,
+        },
+    },
 };
