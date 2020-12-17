@@ -59,6 +59,7 @@ module.exports = {
         'no-self-compare': 'error',
         'no-throw-literal': 'error',
         'no-unmodified-loop-condition': 'warn',
+        'no-unused-vars': 'off',
         'no-use-before-define': 'error',
         'no-useless-backreference': 'warn',
         'no-useless-call': 'error',
@@ -96,6 +97,14 @@ module.exports = {
         '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
         '@typescript-eslint/no-unnecessary-type-arguments': 'warn',
+        '@typescript-eslint/no-unused-vars': [
+            'warn',
+            {
+                varsIgnorePattern: '^_',
+                ignoreRestSiblings: true,
+                argsIgnorePattern: '^_',
+            }
+        ],
         '@typescript-eslint/no-useless-constructor': 'warn',
         '@typescript-eslint/prefer-readonly': 'warn',
         '@typescript-eslint/prefer-reduce-type-parameter': 'warn',
