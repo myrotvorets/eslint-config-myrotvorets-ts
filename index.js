@@ -67,7 +67,12 @@ module.exports = {
         'no-useless-constructor': 'off',
         'no-useless-rename': 'warn',
         'no-useless-return': 'warn',
-        'no-void': 'warn',
+        'no-void': [
+            'warn',
+            {
+                allowAsStatement: true,
+            },
+        ],
         'prefer-promise-reject-errors': 'error',
         'prefer-template': 'warn',
         radix: 'error',
