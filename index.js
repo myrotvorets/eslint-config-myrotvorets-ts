@@ -1,6 +1,6 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'import'],
+    plugins: ['@typescript-eslint', 'import', 'promise'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
@@ -23,7 +23,7 @@ module.exports = {
         'default-param-last': 'error',
         'dot-notation': ['warn', { allowKeywords: true }],
         eqeqeq: 'warn',
-        'no-await-in-loop': 'error',
+        'no-await-in-loop': 'warn',
         'no-caller': 'error',
         'no-console': ['warn', { allow: ['warn', 'error'] }],
         'no-constructor-return': 'error',
@@ -132,6 +132,21 @@ module.exports = {
         'sonarjs/no-small-switch': 'warn',
 
         'jest/expect-expect': 'off',
+
+        'promise/catch-or-return': 'off',
+        'promise/no-return-wrap': 'error',
+        'promise/param-names': 'error',
+        'promise/always-return': 'error',
+        'promise/no-native': 'off',
+        'promise/no-nesting': 'warn',
+        'promise/no-promise-in-callback': 'warn',
+        'promise/no-callback-in-promise': 'warn',
+        'promise/avoid-new': 'off',
+        'promise/no-new-statics': 'error',
+        'promise/no-return-in-finally': 'error',
+        'promise/valid-params': 'warn',
+        'promise/prefer-await-to-then': 'off',
+        'promise/prefer-await-to-callbacks': 'off',
     },
     settings: {
         jest: {
