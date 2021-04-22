@@ -136,7 +136,7 @@ module.exports = {
         'promise/catch-or-return': 'off',
         'promise/no-return-wrap': 'error',
         'promise/param-names': 'error',
-        'promise/always-return': 'error',
+        'promise/always-return': 'off',
         'promise/no-native': 'off',
         'promise/no-nesting': 'warn',
         'promise/no-promise-in-callback': 'warn',
