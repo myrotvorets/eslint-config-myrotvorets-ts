@@ -9,8 +9,6 @@ module.exports = {
         'plugin:import/warnings',
         'plugin:import/typescript',
         'plugin:sonarjs/recommended',
-        'plugin:jest/recommended',
-        'plugin:jest/style',
         'plugin:prettier/recommended',
     ],
     rules: {
@@ -131,8 +129,6 @@ module.exports = {
         'sonarjs/no-element-overwrite': 'warn',
         'sonarjs/no-small-switch': 'warn',
 
-        'jest/expect-expect': 'off',
-
         'promise/catch-or-return': 'off',
         'promise/no-return-wrap': 'error',
         'promise/param-names': 'error',
@@ -147,10 +143,5 @@ module.exports = {
         'promise/valid-params': 'warn',
         'promise/prefer-await-to-then': 'off',
         'promise/prefer-await-to-callbacks': 'off',
-    },
-    settings: {
-        jest: {
-            version: 26,
-        },
     },
 };
