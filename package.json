@@ -17,20 +17,20 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4 || ^4.0.0",
     "eslint-plugin-promise": "^5.0.0",
-    "eslint-plugin-sonarjs": "^0.6.0 || ^0.7.0 || ^0.7.1-117 || ^0.8.0-125 || ^0.9.0 || ^0.10.0"
+    "eslint-plugin-sonarjs": "^0.6.0 || ^0.7.0 || ^0.9.0 || ^0.10.0 || ^0.11.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
     "eslint": "^7.19.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-sonarjs": "^0.10.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-sonarjs": "^0.11.0",
     "prettier": "^2.2.1",
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^4.14.2 || ^5.0.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "eslint-config-prettier": "^8.0.0"
   },
   "repository": {
