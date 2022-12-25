@@ -106,7 +106,7 @@ module.exports = {
                 varsIgnorePattern: '^_',
                 ignoreRestSiblings: true,
                 argsIgnorePattern: '^_',
-            }
+            },
         ],
         '@typescript-eslint/no-useless-constructor': 'warn',
         '@typescript-eslint/prefer-readonly': 'warn',
@@ -143,5 +143,12 @@ module.exports = {
         'promise/valid-params': 'warn',
         'promise/prefer-await-to-then': 'off',
         'promise/prefer-await-to-callbacks': 'off',
+    },
+    settings: {
+        'import/resolver': {
+            typescript: {
+                alwaysTryTypes: true,
+            },
+        },
     },
 };
