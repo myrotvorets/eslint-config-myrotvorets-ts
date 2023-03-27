@@ -5,8 +5,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        'plugin:import/errors',
-        'plugin:import/warnings',
+        'plugin:import/recommended',
         'plugin:import/typescript',
         'plugin:sonarjs/recommended',
         'plugin:prettier/recommended',
@@ -122,6 +121,8 @@ module.exports = {
                 groups: [['builtin', 'external', 'internal']],
             },
         ],
+        'import/no-deprecated': 'warn',
+        'import/no-empty-named-blocks': 'warn',
 
         'sonarjs/cognitive-complexity': 'off',
         'sonarjs/max-switch-cases': 'warn',
@@ -146,9 +147,8 @@ module.exports = {
     },
     settings: {
         'import/resolver': {
-            typescript: {
-                alwaysTryTypes: true,
-            },
+            typescript: true,
+            node: true,
         },
     },
 };
