@@ -91,10 +91,7 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'warn',
         '@typescript-eslint/explicit-member-accessibility': 'error',
         'no-loop-func': 'off',
-        '@typescript-eslint/no-confusing-void-expression': [
-            'error',
-            { ignoreArrowShorthand: true, ignoreVoidOperator: true },
-        ],
+        '@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-loop-func': 'warn',
         '@typescript-eslint/no-this-alias': [
