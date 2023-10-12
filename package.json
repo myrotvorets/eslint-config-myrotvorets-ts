@@ -1,6 +1,6 @@
 {
   "name": "@myrotvorets/eslint-config-myrotvorets-ts",
-  "version": "2.22.3",
+  "version": "2.22.4",
   "description": "ESLint configuration for TypeScript",
   "main": "index.js",
   "files": [
