@@ -101,6 +101,7 @@ module.exports = {
                 allowedNames: ['self'],
             },
         ],
+        '@typescript-eslint/no-unnecessary-condition': ['warn', { allowConstantLoopConditions: true }],
         '@typescript-eslint/no-unused-vars': [
             'warn',
             {
