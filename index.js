@@ -91,6 +91,7 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'warn',
         '@typescript-eslint/explicit-member-accessibility': 'error',
         'no-loop-func': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-loop-func': 'warn',
         '@typescript-eslint/no-this-alias': [
             'error',
