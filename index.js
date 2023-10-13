@@ -111,6 +111,7 @@ module.exports = {
             },
         ],
         'no-use-before-define': 'off',
+        '@typescript-eslint/no-invalid-void-type': ['error', { allowAsThisParameter: true }],
         '@typescript-eslint/no-use-before-define': 'error',
         '@typescript-eslint/no-useless-constructor': 'warn',
         '@typescript-eslint/prefer-readonly': 'warn',
