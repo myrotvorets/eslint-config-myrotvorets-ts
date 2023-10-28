@@ -49,6 +49,7 @@
   },
   "homepage": "https://github.com/myrotvorets/eslint-config-myrotvorets-ts#readme",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   }
 }
