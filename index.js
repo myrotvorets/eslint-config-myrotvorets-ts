@@ -7,7 +7,7 @@ module.exports = {
         'plugin:@typescript-eslint/strict-type-checked',
         'plugin:import/recommended',
         'plugin:import/typescript',
-        'plugin:sonarjs/recommended',
+        'plugin:sonarjs/recommended-legacy',
         'plugin:prettier/recommended',
     ],
     rules: {
