@@ -130,11 +130,19 @@ module.exports = {
         'import/no-deprecated': 'warn',
         'import/no-empty-named-blocks': 'warn',
 
-        'sonarjs/cognitive-complexity': 'off',
+        'sonarjs/cognitive-complexity': 'warn',
         'sonarjs/max-switch-cases': 'warn',
         'sonarjs/no-duplicate-string': 'off',
         'sonarjs/no-element-overwrite': 'warn',
         'sonarjs/no-small-switch': 'warn',
+        'sonarjs/no-nested-functions': 'warn',
+        'sonarjs/assertions-in-tests': 'warn',
+        'sonarjs/prefer-nullish-coalescing': 'off', // We use @typescript-eslint/prefer-nullish-coalescing instead
+        'sonarjs/no-base-to-string': 'off', // We use @typescript-eslint/no-base-to-string
+        'sonarjs/void-use': 'off',
+        'sonarjs/fixme-tag': 'off',
+        'sonarjs/no-redundant-optional': 'off',
+        'sonarjs/concise-regex': 'warn',
 
         'promise/catch-or-return': 'off',
         'promise/no-return-wrap': 'error',
