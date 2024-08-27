@@ -143,6 +143,10 @@ module.exports = {
         'sonarjs/fixme-tag': 'off',
         'sonarjs/no-redundant-optional': 'off',
         'sonarjs/concise-regex': 'warn',
+        'sonarjs/class-name': 'off',
+        'sonarjs/function-return-type': 'off',
+        'sonarjs/redundant-type-aliases': 'off',
+        'sonarjs/anchor-is-valid': 'off', // We use jsx-a11y/anchor-is-valid
 
         'promise/catch-or-return': 'off',
         'promise/no-return-wrap': 'error',
