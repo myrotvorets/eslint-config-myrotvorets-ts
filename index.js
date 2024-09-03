@@ -130,25 +130,25 @@ module.exports = {
         'import/no-deprecated': 'warn',
         'import/no-empty-named-blocks': 'warn',
 
+        'sonarjs/anchor-is-valid': 'off', // We use jsx-a11y/anchor-is-valid
+        'sonarjs/assertions-in-tests': 'warn',
+        'sonarjs/class-name': 'off',
         'sonarjs/cognitive-complexity': 'warn',
+        'sonarjs/concise-regex': 'warn',
+        'sonarjs/fixme-tag': 'off',
+        'sonarjs/function-return-type': 'off',
         'sonarjs/max-switch-cases': 'warn',
+        'sonarjs/no-base-to-string': 'off', // We use @typescript-eslint/no-base-to-string
         'sonarjs/no-duplicate-string': 'off',
         'sonarjs/no-element-overwrite': 'warn',
-        'sonarjs/no-small-switch': 'warn',
-        'sonarjs/no-nested-functions': 'warn',
-        'sonarjs/assertions-in-tests': 'warn',
-        'sonarjs/prefer-nullish-coalescing': 'off', // We use @typescript-eslint/prefer-nullish-coalescing instead
-        'sonarjs/no-base-to-string': 'off', // We use @typescript-eslint/no-base-to-string
-        'sonarjs/void-use': 'off',
-        'sonarjs/fixme-tag': 'off',
-        'sonarjs/no-redundant-optional': 'off',
-        'sonarjs/concise-regex': 'warn',
-        'sonarjs/class-name': 'off',
-        'sonarjs/function-return-type': 'off',
-        'sonarjs/redundant-type-aliases': 'off',
-        'sonarjs/anchor-is-valid': 'off', // We use jsx-a11y/anchor-is-valid
         'sonarjs/no-misused-promises': 'off', // We use @typescript-eslint/no-misused-promises
+        'sonarjs/no-nested-functions': 'warn',
+        'sonarjs/no-redundant-optional': 'off',
+        'sonarjs/no-small-switch': 'warn',
+        'sonarjs/prefer-nullish-coalescing': 'off', // We use @typescript-eslint/prefer-nullish-coalescing instead
+        'sonarjs/redundant-type-aliases': 'off',
         'sonarjs/sonar-no-unused-vars': 'off', // We use @typescript-eslint/no-unused-vars
+        'sonarjs/void-use': 'off',
 
         'promise/catch-or-return': 'off',
         'promise/no-return-wrap': 'error',
