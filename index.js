@@ -147,6 +147,8 @@ module.exports = {
         'sonarjs/function-return-type': 'off',
         'sonarjs/redundant-type-aliases': 'off',
         'sonarjs/anchor-is-valid': 'off', // We use jsx-a11y/anchor-is-valid
+        'sonarjs/no-misused-promises': 'off', // We use @typescript-eslint/no-misused-promises
+        'sonarjs/sonar-no-unused-vars': 'off', // We use @typescript-eslint/no-unused-vars
 
         'promise/catch-or-return': 'off',
         'promise/no-return-wrap': 'error',
