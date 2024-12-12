@@ -36,6 +36,9 @@ const configs = [
     prettierPluginRecommended,
     {
         files,
+        linterOptions: {
+            reportUnusedDisableDirectives: 'warn',
+        },
         languageOptions: {
             parser: typescriptEslintParser,
             parserOptions: {
