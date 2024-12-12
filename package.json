@@ -1,10 +1,11 @@
 {
   "name": "@myrotvorets/eslint-config-myrotvorets-ts",
-  "version": "3.0.0-rc.0",
+  "version": "3.0.0-rc.1",
   "description": "ESLint configuration for TypeScript",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.mjs",
   "files": [
-    "index.js"
+    "index.mjs"
   ],
   "scripts": {
     "test": "exit 0"
@@ -18,7 +19,8 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^7.0.0",
-    "eslint-plugin-sonarjs": "^3.0.1"
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "globals": "^15.13.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",
