@@ -2,9 +2,10 @@
   "name": "@myrotvorets/eslint-config-myrotvorets-ts",
   "version": "2.27.4",
   "description": "ESLint configuration for TypeScript",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.mjs",
   "files": [
-    "index.js"
+    "index.mjs"
   ],
   "scripts": {
     "test": "exit 0"
@@ -13,14 +14,16 @@
   "license": "MIT",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "eslint": ">= 7",
+    "eslint": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-prettier": "^3.1.4 || ^4.0.0 || ^5.0.0",
-    "eslint-plugin-promise": "^5.0.0 || ^6.0.0 || ^7.0.0",
-    "eslint-plugin-sonarjs": "^1.0.0 || ^2.0.0"
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^7.0.0",
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "globals": "^15.13.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.16.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "eslint": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -28,12 +31,14 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-promise": "^7.0.0",
     "eslint-plugin-sonarjs": "^3.0.0",
+    "globals": "^15.13.0",
     "prettier": "^3.2.4",
     "typescript": "^5.3.3"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^8.0.0",
-    "eslint-config-prettier": "^9.0.0"
+    "eslint-config-prettier": "^9.0.0",
+    "typescript-eslint": "^8.18.0"
   },
   "repository": {
     "type": "git",
