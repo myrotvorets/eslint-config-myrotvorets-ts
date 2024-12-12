@@ -14,6 +14,9 @@ on:
         default: "yes"
         description: Publish to GPR?
         required: true
+      dist-tag:
+        default: "latest"
+        description: NPM dist-tag
 
 permissions:
   contents: read
@@ -39,7 +42,7 @@ jobs:
             registry.npmjs.org:443
 
       - name: Prepare source
-        uses: myrotvorets/composite-actions/node-prepublish@a62c0c538c75c36ad4f243bc80cebf03bf1b988e
+        uses: myrotvorets/composite-actions/node-prepublish@b2ee801d40bc37c1303783f99e1fce35fc33bd52
 
   publish:
     name: Publish package (${{ matrix.registry }})
@@ -79,8 +82,9 @@ jobs:
             npm.pkg.github.com:443
 
       - name: Publish package
-        uses: myrotvorets/composite-actions/node-publish@a62c0c538c75c36ad4f243bc80cebf03bf1b988e
+        uses: myrotvorets/composite-actions/node-publish@b2ee801d40bc37c1303783f99e1fce35fc33bd52
         with:
           node-auth-token: ${{ secrets[matrix.secret] }}
           registry-url: ${{ matrix.registry_url }}
+          dist-tag: ${{ github.event.inputs.dist-tag }}
         if: github.event.inputs[matrix.registry] == 'yes' || github.event_name == 'release'
