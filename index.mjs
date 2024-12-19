@@ -186,7 +186,7 @@ const configs = [
             'sonarjs/no-small-switch': 'warn',
             'sonarjs/prefer-nullish-coalescing': 'off', // We use @typescript-eslint/prefer-nullish-coalescing instead
             'sonarjs/redundant-type-aliases': 'off',
-            'sonarjs/sonar-no-unused-vars': 'off', // We use @typescript-eslint/no-unused-vars
+            'sonarjs/no-unused-vars': 'off', // We use @typescript-eslint/no-unused-vars
             'sonarjs/void-use': 'off',
 
             'promise/catch-or-return': 'off',
