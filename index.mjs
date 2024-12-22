@@ -43,7 +43,6 @@ const configs = [
             parser: typescriptEslintParser,
             parserOptions: {
                 projectService: true,
-                tsconfigRootDir: './tsconfig.json',
             },
         },
         plugins: {
