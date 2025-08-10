@@ -23,6 +23,7 @@ jobs:
       matrix:
         language:
           - javascript
+          - actions
     permissions:
       actions: read
       contents: read
