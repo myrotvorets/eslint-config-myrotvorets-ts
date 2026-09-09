@@ -1,7 +1,7 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import typescriptEslintParser from '@typescript-eslint/parser';
-import importPlugin from 'eslint-plugin-import';
+import { importX } from 'eslint-plugin-import-x';
 import promisePlugin from 'eslint-plugin-promise';
 import sonarjsPlugin from 'eslint-plugin-sonarjs';
 import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
@@ -18,10 +18,10 @@ const addFiles = (config) => {
 
 const stylisticTypeChecked = tseslint.configs.stylisticTypeChecked.map(addFiles);
 const strictTypeChecked = tseslint.configs.strictTypeChecked.map(addFiles);
-const importTs = importPlugin.flatConfigs.typescript.files
-    ? importPlugin.flatConfigs.typescript
+const importTs = importX.flatConfigs.typescript.files
+    ? importX.flatConfigs.typescript
     : {
-          ...importPlugin.flatConfigs.typescript,
+          ...importX.flatConfigs.typescript,
           files,
       };
 
@@ -30,7 +30,7 @@ const configs = [
     eslint.configs.recommended,
     ...stylisticTypeChecked,
     ...strictTypeChecked,
-    importPlugin.flatConfigs.recommended,
+    importX.flatConfigs.recommended,
     importTs,
     sonarjsPlugin.configs.recommended,
     prettierPluginRecommended,
@@ -159,14 +159,14 @@ const configs = [
             '@typescript-eslint/return-await': ['warn', 'in-try-catch'],
             '@typescript-eslint/unbound-method': ['warn', { ignoreStatic: true }],
 
-            'import/order': [
+            'import-x/order': [
                 'error',
                 {
                     groups: [['builtin', 'external', 'internal']],
                 },
             ],
-            'import/no-deprecated': 'warn',
-            'import/no-empty-named-blocks': 'warn',
+            'import-x/no-deprecated': 'warn',
+            'import-x/no-empty-named-blocks': 'warn',
 
             'sonarjs/anchor-is-valid': 'off', // We use jsx-a11y/anchor-is-valid
             'sonarjs/assertions-in-tests': 'warn',
