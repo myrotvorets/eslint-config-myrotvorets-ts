@@ -58,6 +58,7 @@ const configs = [
             'no-await-in-loop': 'warn',
             'no-caller': 'error',
             'no-console': ['warn', { allow: ['warn', 'error'] }],
+            'no-constant-condition': 'off', // We use @typescript-eslint/no-unnecessary-condition
             'no-constructor-return': 'error',
             'no-else-return': 'warn',
             'no-eq-null': 'warn',
@@ -173,17 +174,29 @@ const configs = [
             'sonarjs/class-name': 'off',
             'sonarjs/cognitive-complexity': 'warn',
             'sonarjs/concise-regex': 'warn',
+            'sonarjs/deprecation': 'off', // We use @typescript-eslint/no-deprecated
             'sonarjs/fixme-tag': 'off',
             'sonarjs/function-return-type': 'off',
             'sonarjs/max-switch-cases': 'warn',
+            'sonarjs/no-array-delete': 'off', // We use @typescript-eslint/no-array-delete
             'sonarjs/no-base-to-string': 'off', // We use @typescript-eslint/no-base-to-string
+            'sonarjs/no-control-regex': 'off', // We use no-control-regex
+            'sonarjs/no-delete-var': 'off', // We use no-delete-var
             'sonarjs/no-duplicate-string': 'off',
             'sonarjs/no-element-overwrite': 'warn',
+            'sonarjs/no-empty-character-class': 'off', // We use no-empty-character-class
+            'sonarjs/no-fallthrough': 'off', // We use no-fallthrough
+            'sonarjs/no-gratuitous-expressions': 'off', // We use @typescript-eslint/no-unnecessary-condition
+            'sonarjs/no-invalid-regexp': 'off', // We use no-invalid-regexp
+            'sonarjs/no-misleading-character-class': 'off', // We use no-misleading-character-class
             'sonarjs/no-misused-promises': 'off', // We use @typescript-eslint/no-misused-promises
             'sonarjs/no-nested-functions': 'warn',
             'sonarjs/no-redundant-optional': 'off',
+            'sonarjs/no-regex-spaces': 'off', // We use no-regex-spaces
             'sonarjs/no-small-switch': 'warn',
+            'sonarjs/no-useless-catch': 'off', // We use no-useless-catch
             'sonarjs/prefer-nullish-coalescing': 'off', // We use @typescript-eslint/prefer-nullish-coalescing instead
+            'sonarjs/prefer-regexp-exec': 'off', // We use @typescript-eslint/prefer-regexp-exec
             'sonarjs/redundant-type-aliases': 'off',
             'sonarjs/no-unused-vars': 'off', // We use @typescript-eslint/no-unused-vars
             'sonarjs/void-use': 'off',
